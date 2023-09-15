@@ -1,2 +1,2 @@
-<h1> Welcome </h1>
+<h1 style="color:Tomato;"> Welcome </h1>
 <p> :) </p>
