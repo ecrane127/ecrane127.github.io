@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class='topnav'>
+            <a href="/index.html">Home</a>
+            <a href="/HTML/messages/message.html">Message a tutor</a>
+            <a href='/HTML/quizzes/mainq.html'>Quizzes</a>
+            <a href='/HTML/logins/newuser.html'>Sign up</a>
+        </div>       
+        <section class='centre'>
+            <form action="/HTML/studenthome/mains.php">
+                <h1>Student login</h1>
+                <label for="user">Username</label>
+                <input type="text" name="username" id="user" required pattern='[A-Za-z]+'><br>
+                <label for="pw">Password</label>
+                <input type="password" name="password" id="pw" required pattern='[A-Za-z\W+]+'><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </body>
+
+</html>

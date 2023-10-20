@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GibJohn Sign Up</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='topnav'>
+        <a href="/index.html">Home</a>
+        <a href="/HTML/messages/message.html">Message a tutor</a>
+        <a href='/HTML/quizzes/mainq.html'>Quizzes</a>
+        <a class='active' href='/HTML/logins/newuser.html'>Sign up</a>
+    </div>       
+    <section class='centre'>
+        <form action='/process.php' method="POST">
+            <h1 class='darkblue'>Sign up</h1>
+            <label for='fname'>First name</label>
+            <input type='text' name='fname' id='fname' required pattern='[A-Za-z]+'><br><br>
+            <label for='sname'>Last name</label>
+            <input type='text' name='sname' id='sname' required pattern='[A-Za-z]+'><br><br>
+
+            <label for='email'>Contact email</label>
+            <input type='email' name='email' id='email' required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'><br><br>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <span>Are you a Tutor or a Student?</span><br>
+            <label for='tutor'>Tutor</label>
+            <input type='radio' name='choice' id='tutor' value='tutor'>
+            <label for='student'>Student</label>
+            <input type='radio' name='choice' id='student' value='student'><br><br>
+
+            <input type='submit' value='Done'>
+        </form>
+    </section>
+</body>
+
+</html>

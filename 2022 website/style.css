@@ -1,0 +1,84 @@
+.topnav {
+    background-color: rgb(183, 218, 226);
+    overflow: hidden;
+    margin: 0;
+}
+
+.topnav a{
+    float: left;
+    color: darkslateblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: lightcyan;
+    color: darkslateblue
+}
+
+.topnav a.active{
+    background-color: #0981e2;
+    color: white
+}
+
+button{
+    background-color: lightcyan;
+    color: darkslateblue
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.centre{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right button{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.right{
+    text-align: right;
+}
+
+.darkblue{
+    color: darkslateblue;
+}
+
+body{
+    background-color: #E2EFF2;
+    margin:0;
+}
+
+ol{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.quiz{
+    align-items: center;
+}

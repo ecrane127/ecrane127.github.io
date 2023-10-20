@@ -1,0 +1,38 @@
+<!DOCTYPE html>​
+<html>​
+
+<head>​
+    <link href="/style.css" rel="stylesheet">
+    <title> GibJohn Messages </title>
+</head>​
+
+<body>​ 
+    <div class='topnav'>
+            <a href="/index.html">Home</a>
+            <a class='active' href="/HTML/messages/message.html">Message a tutor</a>
+            <a href='/HTML/quizzes/mainq.html'>Quizzes</a> 
+            <a href='/HTML/logins/newuser.html'>Sign up</a>
+    </div>
+    <section>
+        <h1 class='darkblue centre'>Message a tutor</h1>
+        <form class='centre' action='/index.html'>
+            <label for="sub">Which subject would you like help in?</label><br>
+            <select id="sub" name="subject">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+                <option value="MFL">MFL</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <label for="texta">What's your question?</label><br>
+            <textarea id="texta" name="question" rows="3" cols="40"></textarea>
+            <br><br>
+            <input type="submit" value="Ask!">
+        </form>
+    </section>
+</body>​
+
+</html>

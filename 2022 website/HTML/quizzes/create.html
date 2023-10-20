@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="/style.css" rel="stylesheet">
+        <title>GibJohn quizzes</title>
+    </head>
+
+    <body>
+        <div class='topnav'>
+                <a href="/index.html">Home</a>
+                <a href="/HTML/messages/message.html">Message a tutor</a>
+                <a href='./mainq.html'>Quizzes</a>    
+                <a href='/HTML/logins/newuser.html'>Sign up</a>            
+        </div>
+        </div>
+        <h1 class='darkblue centre'>Create a quiz!</h1>
+        <form id="quizForm" action="./quizcreator.php" method="POST">
+            <label for="subject">Choose a subject</label>
+            <select id="subject" name="subject">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="Geography">Geography</option>
+                <option value="History">History</option>
+                <option value="MFL">MFL</option>
+                <option value="Other">Other</option>
+                <option value="JustForFun">Just for fun</option>
+            </select><br><br>
+            <label for="name">Name your quiz:</label>
+            <input type="text" name="name" id="name" required><br>
+            <p> Note: names cannot include any spaces or special characters! </p>
+            <div id="questionsContainer">
+                
+            </div>
+            <button type="button" onclick="addQuestion()">Add Question</button>
+            <button type="submit">Publish Quiz</button>
+        </form>
+
+        <script>
+            let questionCount = 1;
+
+            function addQuestion() {
+            const container = document.getElementById('questionsContainer');
+            const questionDiv = document.createElement('div');
+            questionDiv.innerHTML = `<label>Question ${questionCount}:</label>
+                                        <input type="text" name="question${questionCount}" required>
+                                        <br>
+                                        <label>Answer:</label>
+                                        <input type="text" name="answer${questionCount}" required>
+                                        <br>`;
+            container.appendChild(questionDiv);
+            questionCount++;
+            }
+        </script>
+    </body>
+
+</html>

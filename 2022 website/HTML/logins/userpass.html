@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New user</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='topnav'>
+        <a href="/index.html">Home</a>
+        <a href="/HTML/messages/message.html">Message a tutor</a>
+        <a href='/HTML/quizzes/mainq.html'>Quizzes</a>
+        <a href='/HTML/logins/newuser.html'>Sign up</a>
+    </div>       
+    <section class='centre'>
+        <form action='/logins.php' method="POST">
+            <h1 class='darkblue'>Sign up</h1>
+            <label for='username'>Set a username</label>
+            <input type='text' name='username' id='username' required pattern='[A-Za-z\W+]+'><br><br>
+            <label for='password'>Set your password</label>
+            <input type='text' name='password' id='password' required pattern='[A-Za-z\W+]+'><br><br>
+
+            <input type='submit' value='Done'>
+        </form>
+    </section>
+</body>
+
+</html>
